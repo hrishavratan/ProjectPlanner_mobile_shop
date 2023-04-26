@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mobile Shop</title>
+    <style>
+        /* CSS styles */
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mobile Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Phones</a></li>
+                <li><a href="#">Tablets</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to Mobile Shop</h2>
+            <p>We offer a wide range of mobile phones, tablets, and accessories at affordable prices. Our products are
+                sourced from trusted manufacturers and come with a warranty for your peace of mind.</p>
+        </section>
+
+        <section>
+            <h2>Our Products</h2>
+            <ul>
+                <li>
+                    <img src="phone1.jpg" alt="Phone 1">
+                    <h3>Phone 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere sapien vel velit ultrices
+                        lobortis.</p>
+                    <button>Add to Cart</button>
+                </li>
+                <li>
+                    <img src="phone2.jpg" alt="Phone 2">
+                    <h3>Phone 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere sapien vel velit ultrices
+                        lobortis.</p>
+                    <button>Add to Cart</button>
+                </li>
+                <li>
+                    <img src="tablet1.jpg" alt="Tablet 1">
+                    <h3>Tablet 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere sapien vel velit ultrices
+                        lobortis.</p>
+                    <button>Add to Cart</button>
+                </li>
+                <li>
+                    <img src="accessory1.jpg" alt="Accessory 1">
+                    <h3>Accessory 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere sapien vel velit ultrices
+                        lobortis.</p>
+                    <button>Add to Cart</button>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>Fill in the form below to send us a message:</p>
+            <form method="post" action="" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <span id="nameError" class="error"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <span id="emailError" class="error"></span>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                <span id="phoneError" class="error"></span>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <span id="passwordError" class="error"></span>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
